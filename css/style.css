@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'Seven Segment';
+  src: url(../fonts/Seven\ Segment.woff2);
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 24px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 30px;
+  max-width: 1200px;
+}
+
+.game-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 15px;
+  max-width: 900px;
+}
+
+.title {
+  margin-bottom: 15px;
+}
+
+.timer {
+  display: block;
+  margin-bottom: 15px;
+  font-family: 'Seven Segment';
+  font-size: 52px;
+  color: #5612af;
+}
+
+.timer-game-over {
+  padding: 11.5px 0;
+  font-family: inherit;
+  font-size: 32px;
+}
+
+.disable {
+  pointer-events: none;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  width: 150px;
+  min-height: 180px;
+  border-radius: 15px;
+  background: linear-gradient(to right bottom,#0ce0a1, #1a40e9);
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.card-text {
+  font-size: 36px;
+  font-weight: bold;
+  color: transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.card.open {
+  background: linear-gradient(to right bottom, #d7f81c, #f03434);
+  transform: rotate3d(0, 1, 0, 180deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.card.open .card-text {
+  transform: rotate3d(0, 1, 0, -180deg);
+  color: #7818af;
+  transition: all 0.3s ease-in-out;
+}
+
+.card.matched {
+  background: #278f54;
+  transform: rotate3d(0, 1, 0, 180deg) scale(0.9);
+  transition: all 0.3s ease-in-out;
+}
+
+.card.matched .card-text {
+  color: #fff;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-replay {
+  padding: 15px;
+  background-color: rgb(241, 176, 36);
+  border-color: #b9a0e9;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #7818af;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-replay:hover {
+  background-color: rgb(94, 170, 138);
+  transition: all 0.2s ease-in-out;
+  color: #fff;
+}
+
+.btn-replay:active {
+  background-color: rgb(36, 116, 82);
+  transition: all 0.2s ease-in-out;
+}
+
+.setting-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 300px;
+}
+
+.setting-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.setting-title {
+  font-size: 20px;
+}
+
+.setting-input {
+  border-color: #b9a0e9;
+  border-radius: 10px;
+  max-width: 50px;
+  font-size: 20px;
+  text-align: center;
+  outline-color: rgb(94, 170, 138);
+}
+
+
+
+
+
